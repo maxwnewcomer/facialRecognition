@@ -13,6 +13,6 @@ label = projectPath + "/output/l.pickle"
 imagePath = projectPath + "images/test.jpg"
 confidenceLim = .5
 
-# extract_embeddings(datasetPath, embeddingsPath, detectorPath, embedding_model, confidenceLim)
+extract_embeddings(datasetPath, embeddingsPath, detectorPath, embedding_model, confidenceLim)
 train(embeddingsPath, recognizerPath, label, projectPath)
 recognize_video(detectorPath, embedding_model, recognizerPath, label, confidenceLim, projectPath)
